@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loto Simulator Amélioré</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .numbers {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input[type="date"] {
+            padding: 10px;
+            font-size: 1rem;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simulateur de Tirage Loto</h1>
+    <div class="container">
+        <p>Choisissez une date pour simuler un tirage :</p>
+        <input type="date" id="drawDate" />
+        <div class="numbers" id="results"></div>
+        <button onclick="generateLotoDraw()">Tirage Aléatoire</button>
+        <button onclick="generateDateBasedDraw()">Tirage Basé sur la Date</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
